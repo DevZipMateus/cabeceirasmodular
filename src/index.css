@@ -144,7 +144,7 @@ All colors MUST be HSL.
   }
 
   .btn-outline-hero {
-    @apply bg-white/10 text-primary border-2 border-primary/60 hover:bg-primary hover:text-primary-foreground px-8 py-4 rounded-xl font-semibold transition-all duration-300 backdrop-blur-sm;
+    @apply bg-white/20 text-white border-2 border-white/60 hover:bg-white hover:text-primary px-8 py-4 rounded-xl font-semibold transition-all duration-300 backdrop-blur-sm;
   }
 
   .btn-rosa {

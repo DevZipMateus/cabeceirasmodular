@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Heart } from "lucide-react";
 import whatsappIcon from "@/assets/whatsapp-icon.webp";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -19,8 +20,13 @@ const HeroSection = () => {
 
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background com gradiente */}
-      <div className="absolute inset-0 bg-gradient-to-br from-rosa-bebe via-background to-cinza-claro"></div>
+      {/* Background com imagem */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      ></div>
+      {/* Overlay escuro para legibilidade do texto */}
+      <div className="absolute inset-0 bg-black/50"></div>
       
       {/* Elementos decorativos */}
       <div className="absolute top-20 left-10 opacity-20">
@@ -34,16 +40,16 @@ const HeroSection = () => {
         <div className="max-w-5xl mx-auto text-center">
           {/* H1 da empresa */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight px-4">
-            <span className="gradient-text">Cabeceira Modulares</span>
+            <span className="text-white drop-shadow-lg">Cabeceira Modulares</span>
           </h1>
           
           {/* H2 descritivo */}
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 font-light leading-relaxed max-w-4xl mx-auto px-4">
+          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/90 mb-8 font-light leading-relaxed max-w-4xl mx-auto px-4 drop-shadow-md">
             Somos mulheres que ousaram acreditar. Transformamos ambientes com cabeceiras que carregam nossa história de dedicação, fé e determinação.
           </h2>
           
           {/* Slogan */}
-          <p className="text-base sm:text-lg md:text-xl text-foreground mb-12 max-w-3xl mx-auto px-4">
+          <p className="text-base sm:text-lg md:text-xl text-white/80 mb-12 max-w-3xl mx-auto px-4 drop-shadow-md">
             Referência em cabeceiras personalizadas. Estilo, conforto e qualidade em um único lugar.
           </p>
           
@@ -67,21 +73,21 @@ const HeroSection = () => {
           
           {/* Informações de contato */}
           <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto px-4">
-            <div className="text-center p-4 sm:p-6 rounded-xl bg-white/50 backdrop-blur-sm">
-              <h3 className="font-semibold text-primary mb-2 text-sm sm:text-base">Telefone</h3>
-              <p className="text-muted-foreground text-sm sm:text-base">(21) 97649-1415</p>
+            <div className="text-center p-4 sm:p-6 rounded-xl bg-white/20 backdrop-blur-md border border-white/30">
+              <h3 className="font-semibold text-white mb-2 text-sm sm:text-base">Telefone</h3>
+              <p className="text-white/80 text-sm sm:text-base">(21) 97649-1415</p>
             </div>
-            <div className="text-center p-4 sm:p-6 rounded-xl bg-white/50 backdrop-blur-sm">
-              <h3 className="font-semibold text-primary mb-2 text-sm sm:text-base">Horário</h3>
-              <p className="text-muted-foreground text-xs sm:text-sm">Seg-Sex: 9h às 18h<br/>Sáb-Dom: 10h às 16h</p>
+            <div className="text-center p-4 sm:p-6 rounded-xl bg-white/20 backdrop-blur-md border border-white/30">
+              <h3 className="font-semibold text-white mb-2 text-sm sm:text-base">Horário</h3>
+              <p className="text-white/80 text-xs sm:text-sm">Seg-Sex: 9h às 18h<br/>Sáb-Dom: 10h às 16h</p>
             </div>
-            <div className="text-center p-4 sm:p-6 rounded-xl bg-white/50 backdrop-blur-sm sm:col-span-2 lg:col-span-1">
-              <h3 className="font-semibold text-primary mb-2 text-sm sm:text-base">Instagram</h3>
+            <div className="text-center p-4 sm:p-6 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 sm:col-span-2 lg:col-span-1">
+              <h3 className="font-semibold text-white mb-2 text-sm sm:text-base">Instagram</h3>
               <a 
                 href="https://www.instagram.com/cabeceiramodulares/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors duration-200 text-sm sm:text-base"
+                className="text-white/80 hover:text-white transition-colors duration-200 text-sm sm:text-base"
               >
                 @cabeceiramodulares
               </a>
