@@ -11,7 +11,7 @@ const Footer = () => {
               <img 
                 src="/logo.png" 
                 alt="Cabeceira Modulares" 
-                className="h-12 w-auto brightness-0 invert"
+                className="h-12 w-auto"
               />
               <h3 className="text-xl font-bold">Cabeceira Modulares</h3>
             </div>
