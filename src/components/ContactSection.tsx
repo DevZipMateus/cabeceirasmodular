@@ -69,7 +69,7 @@ const ContactSection = () => {
                         onClick={contato.action}
                         variant="outline"
                         size="sm"
-                        className="text-rosa-accent border-rosa-accent hover:bg-rosa-accent hover:text-white flex items-center gap-2"
+                        className="border-rosa-accent text-rosa-accent hover:bg-rosa-accent hover:text-white transition-all duration-300 flex items-center gap-2"
                       >
                         {contato.showWhatsAppIcon && (
                           <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4" />
@@ -134,10 +134,10 @@ const ContactSection = () => {
               <div className="space-y-4">
                 <Button
                   onClick={() => window.open("https://wa.me/5521976491415", "_blank")}
-                  className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 text-lg w-full sm:w-auto flex items-center gap-2 justify-center"
+                  className="btn-rosa w-full sm:w-auto flex items-center gap-2 justify-center"
                 >
-                  <img src={whatsappIcon} alt="WhatsApp" className="h-5 w-5" />
-                  Chamar no WhatsApp
+                  <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <span className="text-sm sm:text-base">Chamar no WhatsApp</span>
                 </Button>
                 
                 <p className="text-sm opacity-75">

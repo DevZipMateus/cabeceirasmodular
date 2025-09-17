@@ -82,10 +82,10 @@ const GallerySection = () => {
                   {/* Botão */}
                   <Button
                     onClick={() => window.open("https://wa.me/5521976491415", "_blank")}
-                    className="w-full bg-rosa-accent hover:bg-rosa-hover text-primary transition-all duration-300 flex items-center gap-2"
+                    className="w-full btn-rosa flex items-center gap-2 justify-center"
                   >
                     <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4" />
-                    Solicitar similar
+                    <span className="text-sm">Solicitar similar</span>
                   </Button>
                 </div>
               </div>
@@ -114,9 +114,9 @@ const GallerySection = () => {
               <Button
                 onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
                 variant="outline"
-                className="text-primary border-primary hover:bg-primary hover:text-primary-foreground px-8 py-4"
+                className="border-2 border-rosa-accent text-rosa-accent bg-transparent hover:bg-rosa-accent hover:text-white transition-all duration-300"
               >
-                Falar com especialista
+                <span className="text-sm sm:text-base">Falar com especialista</span>
               </Button>
             </div>
           </div>

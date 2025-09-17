@@ -140,15 +140,15 @@ All colors MUST be HSL.
 
 @layer components {
   .btn-hero {
-    @apply bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-sm sm:text-base whitespace-nowrap;
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 px-3 py-2 sm:px-8 sm:py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-xs sm:text-base min-h-[2.5rem] flex items-center justify-center;
   }
 
   .btn-outline-hero {
-    @apply bg-white/20 text-white border-2 border-white/60 hover:bg-white hover:text-primary px-4 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold transition-all duration-300 backdrop-blur-sm text-sm sm:text-base whitespace-nowrap;
+    @apply bg-white/20 text-white border-2 border-white/60 hover:bg-white hover:text-primary px-3 py-2 sm:px-8 sm:py-4 rounded-xl font-semibold transition-all duration-300 backdrop-blur-sm text-xs sm:text-base min-h-[2.5rem] flex items-center justify-center;
   }
 
   .btn-rosa {
-    @apply bg-gradient-to-r from-[hsl(var(--rosa-accent))] to-[hsl(var(--rosa-hover))] text-primary hover:from-[hsl(var(--rosa-hover))] hover:to-[hsl(var(--rosa-accent))] px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium transition-all duration-300 shadow-md hover:shadow-lg text-sm sm:text-base whitespace-nowrap;
+    @apply bg-gradient-to-r from-[hsl(var(--rosa-accent))] to-[hsl(var(--rosa-hover))] text-primary hover:from-[hsl(var(--rosa-hover))] hover:to-[hsl(var(--rosa-accent))] px-3 py-2 sm:px-6 sm:py-3 rounded-lg font-medium transition-all duration-300 shadow-md hover:shadow-lg text-xs sm:text-base min-h-[2.5rem] flex items-center justify-center;
   }
 
   .card-elegant {
