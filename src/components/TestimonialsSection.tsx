@@ -22,6 +22,7 @@ import testimonial7 from "@/assets/testimonials/testimonial-7.jpg";
 import testimonial8 from "@/assets/testimonials/testimonial-8.jpg";
 import testimonial9 from "@/assets/testimonials/testimonial-9.jpg";
 import testimonial10 from "@/assets/testimonials/testimonial-10.jpg";
+import testimonial11 from "@/assets/testimonials/testimonial-11.jpg";
 
 const TestimonialsSection = () => {
   const [api, setApi] = useState<CarouselApi>();
@@ -87,6 +88,12 @@ const TestimonialsSection = () => {
       image: testimonial10,
       title: "Serviço de qualidade",
       description: "Muito obrigado pelo serviços de ótima qualidade prestados desde do atendimento até a entregue"
+    },
+    {
+      id: 11,
+      image: testimonial11,
+      title: "Material excelente",
+      description: "Cheguei a cabeceira. Linda é ótimo material. Agora só falta chegar o enxoval e o papel de parede"
     }
   ];
 
