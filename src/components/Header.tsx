@@ -32,9 +32,7 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-black backdrop-blur-md shadow-md" : "bg-transparent"
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 bg-black shadow-md transition-all duration-300"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -46,9 +44,7 @@ const Header = () => {
               className="h-12 w-auto"
             />
             <div className="hidden sm:block">
-              <h2 className={`text-xl font-bold transition-colors duration-200 ${
-                isScrolled ? "text-white" : "text-primary"
-              }`}>Cabeceira Modulares</h2>
+              <h2 className="text-xl font-bold text-white transition-colors duration-200">Cabeceira Modulares</h2>
             </div>
           </div>
 
@@ -56,33 +52,25 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("inicio")}
-              className={`font-medium transition-colors duration-200 ${
-                isScrolled ? "text-white hover:text-rosa-accent" : "text-foreground hover:text-primary"
-              }`}
+              className="font-medium text-white hover:text-rosa-accent transition-colors duration-200"
             >
               Início
             </button>
             <button
               onClick={() => scrollToSection("sobre")}
-              className={`font-medium transition-colors duration-200 ${
-                isScrolled ? "text-white hover:text-rosa-accent" : "text-foreground hover:text-primary"
-              }`}
+              className="font-medium text-white hover:text-rosa-accent transition-colors duration-200"
             >
               Sobre
             </button>
             <button
               onClick={() => scrollToSection("servicos")}
-              className={`font-medium transition-colors duration-200 ${
-                isScrolled ? "text-white hover:text-rosa-accent" : "text-foreground hover:text-primary"
-              }`}
+              className="font-medium text-white hover:text-rosa-accent transition-colors duration-200"
             >
               Serviços
             </button>
             <button
               onClick={() => scrollToSection("contato")}
-              className={`font-medium transition-colors duration-200 ${
-                isScrolled ? "text-white hover:text-rosa-accent" : "text-foreground hover:text-primary"
-              }`}
+              className="font-medium text-white hover:text-rosa-accent transition-colors duration-200"
             >
               Contato
             </button>
@@ -99,9 +87,7 @@ const Header = () => {
           <Button
             variant="ghost"
             size="sm"
-            className={`md:hidden ${
-              isScrolled ? "text-white hover:text-rosa-accent" : "text-foreground hover:text-primary"
-            }`}
+            className="md:hidden text-white hover:text-rosa-accent"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
