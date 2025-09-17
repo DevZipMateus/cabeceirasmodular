@@ -4,14 +4,14 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-primary to-preto-suave text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Logo e Descrição */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <img 
                 src="/logo.png" 
                 alt="Cabeceira Modulares" 
-                className="h-10 w-auto brightness-0 invert"
+                className="h-12 w-auto filter brightness-0 invert"
               />
               <h3 className="text-xl font-bold">Cabeceira Modulares</h3>
             </div>
@@ -109,11 +109,12 @@ const Footer = () => {
         {/* Linha divisória */}
         <div className="border-t border-white/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-white/60 text-sm">
+            <p className="text-white/60 text-sm text-center md:text-left">
               © {new Date().getFullYear()} Cabeceira Modulares Ltda. Todos os direitos reservados.
             </p>
-            <div className="flex items-center space-x-4 text-sm text-white/60">
+            <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 text-sm text-white/60 text-center">
               <span>CNPJ: 62.277.125/0001-10</span>
+              <span className="hidden sm:block">•</span>
               <span>RUA GENEÚNA 169</span>
             </div>
           </div>

@@ -31,19 +31,19 @@ const ContactSection = () => {
     <section id="contato" className="section-padding bg-gradient-to-b from-background to-rosa-bebe/30">
       <div className="container mx-auto max-w-6xl">
         {/* Título da seção */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 gradient-text">
+        <div className="text-center mb-12 sm:mb-16 px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 gradient-text">
             Entre em contato
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
             Estamos prontas para transformar seu quarto com cabeceiras únicas e personalizadas
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-start px-4">
           {/* Informações de contato */}
           <div>
-            <h3 className="text-2xl font-bold text-primary mb-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-primary mb-6 sm:mb-8">
               Fale conosco
             </h3>
             
@@ -115,12 +115,12 @@ const ContactSection = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="lg:pl-8">
-            <div className="bg-gradient-to-br from-primary to-rosa-accent rounded-2xl p-8 text-white text-center shadow-[var(--shadow-elegant)]">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4">
+          <div className="lg:pl-8 mt-8 lg:mt-0">
+            <div className="bg-gradient-to-br from-primary to-rosa-accent rounded-2xl p-6 sm:p-8 text-white text-center shadow-[var(--shadow-elegant)]">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">
                 Pronta para transformar seu quarto?
               </h3>
-              <p className="text-lg opacity-90 mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg opacity-90 mb-6 sm:mb-8 leading-relaxed">
                 Entre em contato conosco e descubra como uma cabeceira personalizada pode fazer toda a diferença no seu ambiente.
               </p>
               

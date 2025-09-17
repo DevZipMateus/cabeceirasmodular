@@ -45,17 +45,17 @@ const ServicesSection = () => {
     <section id="servicos" className="section-padding bg-gradient-to-b from-rosa-bebe/20 to-background">
       <div className="container mx-auto max-w-6xl">
         {/* Título da seção */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 gradient-text">
+        <div className="text-center mb-12 sm:mb-16 px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 gradient-text">
             Nossos serviços
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
             Especializados em cabeceiras estofadas de alta durabilidade, oferecemos soluções completas para transformar seu quarto
           </p>
         </div>
 
         {/* Serviços principais */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16 sm:mb-20 px-4">
           {servicos.map((servico, index) => (
             <div key={index} className="card-elegant group">
               <div className="text-center mb-6">
@@ -84,10 +84,10 @@ const ServicesSection = () => {
 
         {/* Processo de trabalho */}
         <div className="mb-20">
-          <h3 className="text-2xl sm:text-3xl font-bold text-center text-primary mb-12">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-primary mb-8 sm:mb-12 px-4">
             Como trabalhamos
           </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
             {[
               { numero: "01", titulo: "Consulta inicial", descricao: "Entendemos suas necessidades e estilo" },
               { numero: "02", titulo: "Projeto personalizado", descricao: "Desenvolvemos o design exclusivo" },
@@ -110,11 +110,11 @@ const ServicesSection = () => {
         </div>
 
         {/* Diferenciais */}
-        <div className="bg-gradient-to-r from-primary/5 to-rosa-accent/5 rounded-2xl p-8 sm:p-12">
-          <h3 className="text-2xl sm:text-3xl font-bold text-center text-primary mb-8">
+        <div className="bg-gradient-to-r from-primary/5 to-rosa-accent/5 rounded-2xl p-6 sm:p-8 lg:p-12 mx-4">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-primary mb-6 sm:mb-8">
             Por que escolher a Cabeceira Modulares?
           </h3>
-          <div className="grid sm:grid-cols-3 gap-8 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
             {diferenciais.map((diferencial, index) => (
               <div key={index} className="text-center">
                 <diferencial.icon className="h-10 w-10 text-rosa-accent mx-auto mb-3" />

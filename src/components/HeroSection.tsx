@@ -32,17 +32,17 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-20">
         <div className="max-w-5xl mx-auto text-center">
           {/* H1 da empresa */}
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight px-4">
             <span className="gradient-text">Cabeceira Modulares</span>
           </h1>
           
           {/* H2 descritivo */}
-          <h2 className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-8 font-light leading-relaxed max-w-4xl mx-auto">
+          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 font-light leading-relaxed max-w-4xl mx-auto px-4">
             Somos mulheres que ousaram acreditar. Transformamos ambientes com cabeceiras que carregam nossa história de dedicação, fé e determinação.
           </h2>
           
           {/* Slogan */}
-          <p className="text-lg sm:text-xl text-foreground mb-12 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-foreground mb-12 max-w-3xl mx-auto px-4">
             Referência em cabeceiras personalizadas. Estilo, conforto e qualidade em um único lugar.
           </p>
           
@@ -64,22 +64,22 @@ const HeroSection = () => {
           </div>
           
           {/* Informações de contato */}
-          <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="text-center p-6 rounded-xl bg-white/50 backdrop-blur-sm">
-              <h3 className="font-semibold text-primary mb-2">Telefone</h3>
-              <p className="text-muted-foreground">(21) 97649-1415</p>
+          <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto px-4">
+            <div className="text-center p-4 sm:p-6 rounded-xl bg-white/50 backdrop-blur-sm">
+              <h3 className="font-semibold text-primary mb-2 text-sm sm:text-base">Telefone</h3>
+              <p className="text-muted-foreground text-sm sm:text-base">(21) 97649-1415</p>
             </div>
-            <div className="text-center p-6 rounded-xl bg-white/50 backdrop-blur-sm">
-              <h3 className="font-semibold text-primary mb-2">Horário</h3>
-              <p className="text-muted-foreground text-sm">Seg-Sex: 9h às 18h<br/>Sáb-Dom: 10h às 16h</p>
+            <div className="text-center p-4 sm:p-6 rounded-xl bg-white/50 backdrop-blur-sm">
+              <h3 className="font-semibold text-primary mb-2 text-sm sm:text-base">Horário</h3>
+              <p className="text-muted-foreground text-xs sm:text-sm">Seg-Sex: 9h às 18h<br/>Sáb-Dom: 10h às 16h</p>
             </div>
-            <div className="text-center p-6 rounded-xl bg-white/50 backdrop-blur-sm sm:col-span-2 lg:col-span-1">
-              <h3 className="font-semibold text-primary mb-2">Instagram</h3>
+            <div className="text-center p-4 sm:p-6 rounded-xl bg-white/50 backdrop-blur-sm sm:col-span-2 lg:col-span-1">
+              <h3 className="font-semibold text-primary mb-2 text-sm sm:text-base">Instagram</h3>
               <a 
                 href="https://www.instagram.com/cabeceiramodulares/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors duration-200"
+                className="text-muted-foreground hover:text-primary transition-colors duration-200 text-sm sm:text-base"
               >
                 @cabeceiramodulares
               </a>

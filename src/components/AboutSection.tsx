@@ -28,19 +28,19 @@ const AboutSection = () => {
     <section id="sobre" className="section-padding bg-gradient-to-b from-background to-rosa-bebe/20">
       <div className="container mx-auto max-w-6xl">
         {/* Título da seção */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 gradient-text">
+        <div className="text-center mb-12 sm:mb-16 px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 gradient-text">
             Sobre nós
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
             Conheça a história por trás da Cabeceira Modulares e nossos valores fundamentais
           </p>
         </div>
 
         {/* História da empresa */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-20 px-4">
           <div>
-            <h3 className="text-2xl sm:text-3xl font-bold text-primary mb-6">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-4 sm:mb-6">
               Nossa história
             </h3>
             <div className="prose prose-lg max-w-none">
@@ -67,10 +67,10 @@ const AboutSection = () => {
 
         {/* Valores */}
         <div>
-          <h3 className="text-2xl sm:text-3xl font-bold text-center text-primary mb-12">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-primary mb-8 sm:mb-12 px-4">
             Nossos valores
           </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 px-4">
             {valores.map((valor, index) => (
               <div key={index} className="card-elegant text-center group">
                 <valor.icon className="h-12 w-12 text-rosa-accent mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
