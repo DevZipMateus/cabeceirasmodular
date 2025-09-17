@@ -2,7 +2,7 @@ import { Heart, Instagram, Phone, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-primary to-preto-suave text-white">
+    <footer className="bg-black text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Logo e Descrição */}
