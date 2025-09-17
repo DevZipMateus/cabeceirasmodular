@@ -1,0 +1,129 @@
+import { Button } from "@/components/ui/button";
+import { Eye, ArrowRight } from "lucide-react";
+import whatsappIcon from "@/assets/whatsapp-icon.webp";
+import gallery1 from "@/assets/gallery-1.jpg";
+import gallery2 from "@/assets/gallery-2.jpg";
+import gallery3 from "@/assets/gallery-3.jpg";
+
+const GallerySection = () => {
+  const projetos = [
+    {
+      id: 1,
+      image: gallery1,
+      title: "Cabeceira Tetrix Duplo",
+      description: "Inspirada na modernidade dos traços geométricos, traz movimento e originalidade ao ambiente.",
+      features: ["Design geométrico", "Iluminação LED", "Acabamento premium"]
+    },
+    {
+      id: 2,
+      image: gallery2,
+      title: "Cabeceira Domino",
+      description: "Com visual marcante e geométrico, valoriza a parede e cria um ambiente cheio de personalidade.",
+      features: ["Visual marcante", "Linhas verticais", "Estofado de qualidade"]
+    },
+    {
+      id: 3,
+      image: gallery3,
+      title: "Cabeceira Palito",
+      description: "Design clean e sofisticado com linhas verticais delicadas que alongam o ambiente.",
+      features: ["Design clean", "Linhas delicadas", "Sofisticação"]
+    }
+  ];
+
+  return (
+    <section className="section-padding bg-gradient-to-b from-background to-rosa-bebe/10">
+      <div className="container mx-auto max-w-6xl">
+        {/* Título da seção */}
+        <div className="text-center mb-12 sm:mb-16 px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 gradient-text">
+            Alguns de nossos serviços
+          </h2>
+          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
+            Conheça alguns dos projetos realizados pela Cabeceira Modulares e inspire-se para seu próximo projeto
+          </p>
+        </div>
+
+        {/* Grid de projetos */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 px-4">
+          {projetos.map((projeto) => (
+            <div key={projeto.id} className="group">
+              <div className="card-elegant overflow-hidden">
+                {/* Imagem */}
+                <div className="relative overflow-hidden rounded-t-lg mb-6">
+                  <img 
+                    src={projeto.image} 
+                    alt={projeto.title}
+                    className="w-full h-64 sm:h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <Eye className="h-8 w-8 text-white" />
+                  </div>
+                </div>
+
+                {/* Conteúdo */}
+                <div className="p-6 pt-0">
+                  <h3 className="text-xl font-bold text-primary mb-3">
+                    {projeto.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                    {projeto.description}
+                  </p>
+
+                  {/* Features */}
+                  <ul className="space-y-2 mb-6">
+                    {projeto.features.map((feature, index) => (
+                      <li key={index} className="flex items-center text-sm">
+                        <ArrowRight className="h-4 w-4 text-rosa-accent mr-2 flex-shrink-0" />
+                        <span className="text-muted-foreground">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* Botão */}
+                  <Button
+                    onClick={() => window.open("https://wa.me/5521976491415", "_blank")}
+                    className="w-full bg-rosa-accent hover:bg-rosa-hover text-primary transition-all duration-300 flex items-center gap-2"
+                  >
+                    <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4" />
+                    Solicitar similar
+                  </Button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Call to action */}
+        <div className="text-center px-4">
+          <div className="bg-gradient-to-r from-rosa-bebe/50 to-rosa-accent/30 rounded-2xl p-8 sm:p-12">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-4">
+              Gostou dos nossos trabalhos?
+            </h3>
+            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+              Cada projeto é único e personalizado para atender suas necessidades específicas. 
+              Entre em contato e vamos criar algo especial para você!
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Button
+                onClick={() => window.open("https://wa.me/5521976491415", "_blank")}
+                className="btn-rosa text-lg px-8 py-4 flex items-center gap-2"
+              >
+                <img src={whatsappIcon} alt="WhatsApp" className="h-5 w-5" />
+                Ver mais projetos
+              </Button>
+              <Button
+                onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
+                variant="outline"
+                className="text-primary border-primary hover:bg-primary hover:text-primary-foreground px-8 py-4"
+              >
+                Falar com especialista
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default GallerySection;
