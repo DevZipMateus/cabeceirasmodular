@@ -87,9 +87,9 @@ const GallerySection = () => {
               <Button
                 onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
                 variant="outline"
-                className="border-2 border-rosa-accent text-rosa-accent bg-transparent hover:bg-rosa-accent hover:text-white transition-all duration-300"
+                className="bg-white text-primary border-2 border-white hover:bg-primary hover:text-white transition-all duration-300"
               >
-                <span className="text-sm sm:text-base">Falar com especialista</span>
+                <span className="text-sm sm:text-base font-medium">Falar com especialista</span>
               </Button>
             </div>
           </div>

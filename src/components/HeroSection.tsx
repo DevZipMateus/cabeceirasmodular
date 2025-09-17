@@ -64,10 +64,10 @@ const HeroSection = () => {
             </Button>
             <Button 
               onClick={() => scrollToSection("servicos")}
-              variant="outline"
-              className="btn-outline-hero"
+              variant="outline" 
+              className="bg-white/90 text-primary border-2 border-white hover:bg-white hover:text-primary px-3 py-2 sm:px-8 sm:py-4 rounded-xl font-semibold transition-all duration-300 text-xs sm:text-base min-h-[2.5rem] flex items-center justify-center"
             >
-              <span className="text-xs sm:text-base">Nossos serviços</span>
+              <span className="text-xs sm:text-base font-medium">Nossos serviços</span>
             </Button>
           </div>
           
