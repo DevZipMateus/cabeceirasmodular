@@ -79,7 +79,7 @@ const Header = () => {
               className="btn-rosa flex items-center gap-2"
             >
               <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4" />
-              Fale conosco
+              <span className="text-xs sm:text-sm">Fale conosco</span>
             </Button>
           </nav>
 
@@ -124,10 +124,10 @@ const Header = () => {
               </button>
               <Button 
                 onClick={() => window.open("https://wa.me/5521976491415", "_blank")}
-                className="btn-rosa w-fit flex items-center gap-2"
+                className="btn-rosa w-full flex items-center gap-2 justify-center"
               >
                 <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4" />
-                Fale conosco
+                <span className="text-sm">Fale conosco</span>
               </Button>
             </nav>
           </div>

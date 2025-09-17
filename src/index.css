@@ -140,15 +140,15 @@ All colors MUST be HSL.
 
 @layer components {
   .btn-hero {
-    @apply bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105;
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-sm sm:text-base whitespace-nowrap;
   }
 
   .btn-outline-hero {
-    @apply bg-white/20 text-white border-2 border-white/60 hover:bg-white hover:text-primary px-8 py-4 rounded-xl font-semibold transition-all duration-300 backdrop-blur-sm;
+    @apply bg-white/20 text-white border-2 border-white/60 hover:bg-white hover:text-primary px-4 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold transition-all duration-300 backdrop-blur-sm text-sm sm:text-base whitespace-nowrap;
   }
 
   .btn-rosa {
-    @apply bg-gradient-to-r from-[hsl(var(--rosa-accent))] to-[hsl(var(--rosa-hover))] text-primary hover:from-[hsl(var(--rosa-hover))] hover:to-[hsl(var(--rosa-accent))] px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-md hover:shadow-lg;
+    @apply bg-gradient-to-r from-[hsl(var(--rosa-accent))] to-[hsl(var(--rosa-hover))] text-primary hover:from-[hsl(var(--rosa-hover))] hover:to-[hsl(var(--rosa-accent))] px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium transition-all duration-300 shadow-md hover:shadow-lg text-sm sm:text-base whitespace-nowrap;
   }
 
   .card-elegant {

@@ -57,17 +57,17 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               onClick={() => window.open("https://wa.me/5521976491415", "_blank")}
-              className="btn-hero text-lg px-10 py-6 flex items-center gap-2"
+              className="btn-hero flex items-center gap-2"
             >
-              <img src={whatsappIcon} alt="WhatsApp" className="h-5 w-5" />
-              Solicitar orçamento
+              <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4 sm:h-5 sm:w-5" />
+              <span className="text-xs sm:text-base">Solicitar orçamento</span>
             </Button>
             <Button 
               onClick={() => scrollToSection("servicos")}
               variant="outline"
-              className="btn-outline-hero text-lg px-10 py-6"
+              className="btn-outline-hero"
             >
-              Nossos serviços
+              <span className="text-xs sm:text-base">Nossos serviços</span>
             </Button>
           </div>
           

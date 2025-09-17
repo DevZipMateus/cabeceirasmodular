@@ -106,10 +106,10 @@ const GallerySection = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
                 onClick={() => window.open("https://wa.me/5521976491415", "_blank")}
-                className="btn-rosa text-lg px-8 py-4 flex items-center gap-2"
+                className="btn-rosa flex items-center gap-2"
               >
-                <img src={whatsappIcon} alt="WhatsApp" className="h-5 w-5" />
-                Ver mais projetos
+                <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4 sm:h-5 sm:w-5" />
+                <span className="text-xs sm:text-base">Ver mais projetos</span>
               </Button>
               <Button
                 onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}

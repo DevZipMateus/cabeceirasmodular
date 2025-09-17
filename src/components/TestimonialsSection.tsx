@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import {
   Carousel,
@@ -238,13 +239,13 @@ const TestimonialsSection = () => {
               Junte-se aos nossos clientes satisfeitos e transforme seu quarto com uma cabeceira única e personalizada.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button
+              <Button
                 onClick={() => window.open("https://wa.me/5521976491415", "_blank")}
-                className="btn-rosa text-lg px-8 py-4 flex items-center gap-2"
+                className="btn-rosa flex items-center gap-2"
               >
-                <MessageSquare className="h-5 w-5" />
-                Solicitar orçamento
-              </button>
+                <MessageSquare className="h-4 w-4 sm:h-5 sm:w-5" />
+                <span className="text-xs sm:text-base">Solicitar orçamento</span>
+              </Button>
             </div>
           </div>
         </div>

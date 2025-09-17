@@ -131,10 +131,10 @@ const ServicesSection = () => {
           <div className="text-center">
             <Button 
               onClick={() => window.open("https://wa.me/5521976491415", "_blank")}
-              className="btn-rosa text-lg px-8 py-4 flex items-center gap-2"
+              className="btn-rosa flex items-center gap-2 mx-auto"
             >
-              <img src={whatsappIcon} alt="WhatsApp" className="h-5 w-5" />
-              Solicitar orçamento gratuito
+              <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4 sm:h-5 sm:w-5" />
+              <span className="text-xs sm:text-base">Solicitar orçamento gratuito</span>
             </Button>
           </div>
         </div>
