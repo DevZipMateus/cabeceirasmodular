@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Eye, ArrowRight } from "lucide-react";
+import { Eye } from "lucide-react";
 import whatsappIcon from "@/assets/whatsapp-icon.webp";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
@@ -9,24 +9,15 @@ const GallerySection = () => {
   const projetos = [
     {
       id: 1,
-      image: gallery1,
-      title: "Cabeceira Tetrix Duplo",
-      description: "Inspirada na modernidade dos traços geométricos, traz movimento e originalidade ao ambiente.",
-      features: ["Design geométrico", "Iluminação LED", "Acabamento premium"]
+      image: gallery1
     },
     {
       id: 2,
-      image: gallery2,
-      title: "Cabeceira Domino",
-      description: "Com visual marcante e geométrico, valoriza a parede e cria um ambiente cheio de personalidade.",
-      features: ["Visual marcante", "Linhas verticais", "Estofado de qualidade"]
+      image: gallery2
     },
     {
       id: 3,
-      image: gallery3,
-      title: "Cabeceira Palito",
-      description: "Design clean e sofisticado com linhas verticais delicadas que alongam o ambiente.",
-      features: ["Design clean", "Linhas delicadas", "Sofisticação"]
+      image: gallery3
     }
   ];
 
@@ -49,10 +40,10 @@ const GallerySection = () => {
             <div key={projeto.id} className="group">
               <div className="card-elegant overflow-hidden">
                 {/* Imagem */}
-                <div className="relative overflow-hidden rounded-t-lg mb-6">
+                <div className="relative overflow-hidden rounded-t-lg">
                   <img 
                     src={projeto.image} 
-                    alt={projeto.title}
+                    alt={`Projeto ${projeto.id}`}
                     className="w-full h-64 sm:h-72 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -60,26 +51,8 @@ const GallerySection = () => {
                   </div>
                 </div>
 
-                {/* Conteúdo */}
-                <div className="p-6 pt-0">
-                  <h3 className="text-xl font-bold text-primary mb-3">
-                    {projeto.title}
-                  </h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
-                    {projeto.description}
-                  </p>
-
-                  {/* Features */}
-                  <ul className="space-y-2 mb-6">
-                    {projeto.features.map((feature, index) => (
-                      <li key={index} className="flex items-center text-sm">
-                        <ArrowRight className="h-4 w-4 text-rosa-accent mr-2 flex-shrink-0" />
-                        <span className="text-muted-foreground">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  {/* Botão */}
+                {/* Botão */}
+                <div className="p-4">
                   <Button
                     onClick={() => window.open("https://wa.me/5521976491415", "_blank")}
                     className="w-full btn-rosa flex items-center gap-2 justify-center"
