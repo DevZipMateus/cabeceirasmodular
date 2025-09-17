@@ -53,23 +53,23 @@ const ContactSection = () => {
             
             <div className="space-y-6 mb-8">
               {contatos.map((contato, index) => (
-                <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300 border-rosa-accent/20">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-rosa-accent rounded-lg flex items-center justify-center">
+                <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300 border-rosa-accent/20 text-center">
+                  <div className="flex flex-col items-center space-y-4">
+                    <div className="w-12 h-12 bg-rosa-accent rounded-lg flex items-center justify-center">
                       <contato.icon className="h-6 w-6 text-primary" />
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-semibold text-primary mb-1">
+                      <h4 className="font-semibold text-primary mb-2 text-center">
                         {contato.title}
                       </h4>
-                      <p className="text-muted-foreground mb-3">
+                      <p className="text-muted-foreground mb-4 text-center">
                         {contato.info}
                       </p>
                       <Button
                         onClick={contato.action}
                         variant="outline"
                         size="sm"
-                        className="border-2 border-primary text-primary bg-white hover:bg-primary hover:text-white transition-all duration-300 flex items-center gap-2 font-medium"
+                        className="border-2 border-primary text-primary bg-white hover:bg-primary hover:text-white transition-all duration-300 flex items-center gap-2 font-medium mx-auto"
                       >
                         {contato.showWhatsAppIcon && (
                           <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4" />
