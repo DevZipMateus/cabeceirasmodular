@@ -69,7 +69,7 @@ const ContactSection = () => {
                         onClick={contato.action}
                         variant="outline"
                         size="sm"
-                        className="border-rosa-accent text-rosa-accent hover:bg-rosa-accent hover:text-white transition-all duration-300 flex items-center gap-2"
+                        className="border-2 border-primary text-primary bg-white hover:bg-primary hover:text-white transition-all duration-300 flex items-center gap-2 font-medium"
                       >
                         {contato.showWhatsAppIcon && (
                           <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4" />
