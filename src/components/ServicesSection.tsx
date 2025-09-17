@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Palette, Ruler, Sparkles, Shield, Clock, Heart } from "lucide-react";
+import whatsappIcon from "@/assets/whatsapp-icon.webp";
 
 const ServicesSection = () => {
   const servicos = [
@@ -130,8 +131,9 @@ const ServicesSection = () => {
           <div className="text-center">
             <Button 
               onClick={() => window.open("https://wa.me/5521976491415", "_blank")}
-              className="btn-rosa text-lg px-8 py-4"
+              className="btn-rosa text-lg px-8 py-4 flex items-center gap-2"
             >
+              <img src={whatsappIcon} alt="WhatsApp" className="h-5 w-5" />
               Solicitar orçamento gratuito
             </Button>
           </div>

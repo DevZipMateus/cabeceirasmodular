@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Heart } from "lucide-react";
+import whatsappIcon from "@/assets/whatsapp-icon.webp";
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -50,8 +51,9 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               onClick={() => window.open("https://wa.me/5521976491415", "_blank")}
-              className="btn-hero text-lg px-10 py-6"
+              className="btn-hero text-lg px-10 py-6 flex items-center gap-2"
             >
+              <img src={whatsappIcon} alt="WhatsApp" className="h-5 w-5" />
               Solicitar orçamento
             </Button>
             <Button 

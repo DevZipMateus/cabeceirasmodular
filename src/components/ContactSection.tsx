@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock, Instagram } from "lucide-react";
+import whatsappIcon from "@/assets/whatsapp-icon.webp";
 
 const ContactSection = () => {
   const contatos = [
@@ -9,21 +10,24 @@ const ContactSection = () => {
       title: "Telefone",
       info: "(21) 97649-1415",
       action: () => window.open("https://wa.me/5521976491415", "_blank"),
-      actionText: "Chamar no WhatsApp"
+      actionText: "Chamar no WhatsApp",
+      showWhatsAppIcon: true
     },
     {
       icon: Mail,
       title: "E-mail",
       info: "cabeceiradelas@gmail.com",
       action: () => window.open("mailto:cabeceiradelas@gmail.com", "_blank"),
-      actionText: "Enviar e-mail"
+      actionText: "Enviar e-mail",
+      showWhatsAppIcon: false
     },
     {
       icon: Instagram,
       title: "Instagram",
       info: "@cabeceiramodulares",
       action: () => window.open("https://www.instagram.com/cabeceiramodulares/", "_blank"),
-      actionText: "Seguir no Instagram"
+      actionText: "Seguir no Instagram",
+      showWhatsAppIcon: false
     }
   ];
 
@@ -65,8 +69,11 @@ const ContactSection = () => {
                         onClick={contato.action}
                         variant="outline"
                         size="sm"
-                        className="text-rosa-accent border-rosa-accent hover:bg-rosa-accent hover:text-white"
+                        className="text-rosa-accent border-rosa-accent hover:bg-rosa-accent hover:text-white flex items-center gap-2"
                       >
+                        {contato.showWhatsAppIcon && (
+                          <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4" />
+                        )}
                         {contato.actionText}
                       </Button>
                     </div>
@@ -127,9 +134,10 @@ const ContactSection = () => {
               <div className="space-y-4">
                 <Button
                   onClick={() => window.open("https://wa.me/5521976491415", "_blank")}
-                  className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 text-lg w-full sm:w-auto"
+                  className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 text-lg w-full sm:w-auto flex items-center gap-2 justify-center"
                 >
-                  💬 Chamar no WhatsApp
+                  <img src={whatsappIcon} alt="WhatsApp" className="h-5 w-5" />
+                  Chamar no WhatsApp
                 </Button>
                 
                 <p className="text-sm opacity-75">

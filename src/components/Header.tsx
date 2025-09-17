@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import whatsappIcon from "@/assets/whatsapp-icon.webp";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -87,8 +88,9 @@ const Header = () => {
             </button>
             <Button 
               onClick={() => window.open("https://wa.me/5521976491415", "_blank")}
-              className="btn-rosa"
+              className="btn-rosa flex items-center gap-2"
             >
+              <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4" />
               Fale conosco
             </Button>
           </nav>
@@ -136,8 +138,9 @@ const Header = () => {
               </button>
               <Button 
                 onClick={() => window.open("https://wa.me/5521976491415", "_blank")}
-                className="btn-rosa w-fit"
+                className="btn-rosa w-fit flex items-center gap-2"
               >
+                <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4" />
                 Fale conosco
               </Button>
             </nav>
