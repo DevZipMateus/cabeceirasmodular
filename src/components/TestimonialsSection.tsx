@@ -240,7 +240,7 @@ const TestimonialsSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
-                onClick={() => window.open("https://wa.me/5521976491415", "_blank")}
+                onClick={() => window.open("https://wa.me/552199781936", "_blank")}
                 className="btn-rosa flex items-center gap-2"
               >
                 <MessageSquare className="h-4 w-4 sm:h-5 sm:w-5" />

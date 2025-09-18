@@ -2,7 +2,7 @@ import whatsappIcon from "@/assets/whatsapp-icon.webp";
 
 const WhatsAppFloat = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/5521976491415", "_blank");
+    window.open("https://wa.me/552199781936", "_blank");
   };
 
   return (

@@ -8,8 +8,8 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: "Telefone",
-      info: "(21) 97649-1415",
-      action: () => window.open("https://wa.me/5521976491415", "_blank"),
+      info: "(21) 99781-9360",
+      action: () => window.open("https://wa.me/552199781936", "_blank"),
       actionText: "Chamar no WhatsApp",
       showWhatsAppIcon: true
     },
@@ -133,7 +133,7 @@ const ContactSection = () => {
               
               <div className="space-y-4">
                 <Button
-                  onClick={() => window.open("https://wa.me/5521976491415", "_blank")}
+                  onClick={() => window.open("https://wa.me/552199781936", "_blank")}
                   className="btn-rosa w-full sm:w-auto flex items-center gap-2 justify-center"
                 >
                   <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4 sm:h-5 sm:w-5" />

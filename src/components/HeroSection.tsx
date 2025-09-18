@@ -56,7 +56,7 @@ const HeroSection = () => {
           {/* Botões de ação */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
-              onClick={() => window.open("https://wa.me/5521976491415", "_blank")}
+              onClick={() => window.open("https://wa.me/552199781936", "_blank")}
               className="btn-hero flex items-center gap-2"
             >
               <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4 sm:h-5 sm:w-5" />
@@ -75,7 +75,7 @@ const HeroSection = () => {
           <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto px-4">
             <div className="text-center p-4 sm:p-6 rounded-xl bg-white/20 backdrop-blur-md border border-white/30">
               <h3 className="font-semibold text-white mb-2 text-sm sm:text-base">Telefone</h3>
-              <p className="text-white/80 text-sm sm:text-base">(21) 97649-1415</p>
+              <p className="text-white/80 text-sm sm:text-base">(21) 99781-9360</p>
             </div>
             <div className="text-center p-4 sm:p-6 rounded-xl bg-white/20 backdrop-blur-md border border-white/30">
               <h3 className="font-semibold text-white mb-2 text-sm sm:text-base">Horário</h3>

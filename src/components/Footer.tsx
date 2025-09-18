@@ -68,13 +68,13 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contato</h4>
             <div className="space-y-3">
               <a 
-                href="https://wa.me/5521976491415" 
+                href="https://wa.me/552199781936" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-white/80 hover:text-white transition-colors duration-200"
               >
                 <Phone className="h-4 w-4" />
-                <span>(21) 97649-1415</span>
+                <span>(21) 99781-9360</span>
               </a>
               <a 
                 href="mailto:cabeceiradelas@gmail.com"
