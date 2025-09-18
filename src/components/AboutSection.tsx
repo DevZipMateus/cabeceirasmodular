@@ -1,31 +1,23 @@
 import { Heart, Star, Shield, Sparkles } from "lucide-react";
-
 const AboutSection = () => {
-  const valores = [
-    {
-      icon: Heart,
-      title: "Paixão",
-      description: "Cada cabeceira é criada com amor e dedicação, refletindo nosso cuidado em cada detalhe."
-    },
-    {
-      icon: Star,
-      title: "Qualidade",
-      description: "Utilizamos materiais de alta durabilidade e técnicas refinadas para garantir excelência."
-    },
-    {
-      icon: Shield,
-      title: "Confiança",
-      description: "Nossa reputação foi construída com base na confiança e satisfação de nossos clientes."
-    },
-    {
-      icon: Sparkles,
-      title: "Inovação",
-      description: "Sempre buscamos novas formas de transformar ambientes e superar expectativas."
-    }
-  ];
-
-  return (
-    <section id="sobre" className="section-padding bg-gradient-to-b from-background to-rosa-bebe/20">
+  const valores = [{
+    icon: Heart,
+    title: "Paixão",
+    description: "Cada cabeceira é criada com amor e dedicação, refletindo nosso cuidado em cada detalhe."
+  }, {
+    icon: Star,
+    title: "Qualidade",
+    description: "Utilizamos materiais de alta durabilidade e técnicas refinadas para garantir excelência."
+  }, {
+    icon: Shield,
+    title: "Confiança",
+    description: "Nossa reputação foi construída com base na confiança e satisfação de nossos clientes."
+  }, {
+    icon: Sparkles,
+    title: "Inovação",
+    description: "Sempre buscamos novas formas de transformar ambientes e superar expectativas."
+  }];
+  return <section id="sobre" className="section-padding bg-gradient-to-b from-background to-rosa-bebe/20">
       <div className="container mx-auto max-w-6xl">
         {/* Título da seção */}
         <div className="text-center mb-12 sm:mb-16 px-4">
@@ -71,8 +63,7 @@ const AboutSection = () => {
             Nossos valores
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 px-4">
-            {valores.map((valor, index) => (
-              <div key={index} className="card-elegant text-center group">
+            {valores.map((valor, index) => <div key={index} className="card-elegant text-center group">
                 <valor.icon className="h-12 w-12 text-rosa-accent mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h4 className="text-xl font-semibold text-primary mb-3">
                   {valor.title}
@@ -80,8 +71,7 @@ const AboutSection = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   {valor.description}
                 </p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
 
@@ -91,15 +81,10 @@ const AboutSection = () => {
             <h3 className="text-2xl sm:text-3xl font-bold mb-4">
               O que nos torna especiais
             </h3>
-            <p className="text-lg sm:text-xl opacity-90 max-w-4xl mx-auto leading-relaxed">
-              Combinamos a experiência de mulheres empreendedoras com técnicas artesanais refinadas, 
-              criando cabeceiras estofadas de alta durabilidade que transformam completamente o seu quarto.
-            </p>
+            <p className="text-lg sm:text-xl opacity-90 max-w-4xl mx-auto leading-relaxed">Combinamos a experiência de mulheres empreendedoras com técnicas artesanais refinadas, criando cabeceiras estofadas de alta durabilidade que transformam completamente a sua casa.</p>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
