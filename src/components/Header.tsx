@@ -75,7 +75,7 @@ const Header = () => {
               Contato
             </button>
             <Button 
-              onClick={() => window.open("https://wa.me/552199781936", "_blank")}
+              onClick={() => window.open("https://wa.me/5521997819360", "_blank")}
               className="btn-rosa flex items-center gap-2"
             >
               <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4" />
@@ -123,7 +123,7 @@ const Header = () => {
                 Contato
               </button>
               <Button 
-                onClick={() => window.open("https://wa.me/552199781936", "_blank")}
+                onClick={() => window.open("https://wa.me/5521997819360", "_blank")}
                 className="btn-rosa w-full flex items-center gap-2 justify-center"
               >
                 <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4" />

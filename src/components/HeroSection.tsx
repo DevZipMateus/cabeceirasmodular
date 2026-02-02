@@ -56,7 +56,7 @@ const HeroSection = () => {
           {/* Botões de ação */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
-              onClick={() => window.open("https://wa.me/552199781936", "_blank")}
+              onClick={() => window.open("https://wa.me/5521997819360", "_blank")}
               className="btn-hero flex items-center gap-2"
             >
               <img src={whatsappIcon} alt="WhatsApp" className="h-4 w-4 sm:h-5 sm:w-5" />
